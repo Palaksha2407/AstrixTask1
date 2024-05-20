@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5e9d4;
+}
+
+.container {
+    padding: 20px;
+}
+
+header .logo {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+main .text-container {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.text-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text-row span {
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.image-text {
+    display: inline-flex;
+    align-items: center;
+}
+
+.image-text img {
+    height: 1em;
+    object-fit: cover;
+    transform-origin: left; /* Ensures the animation grows from the left to the right */
+    animation: resizeImage 5s infinite;
+}
+
+.text-move {
+    animation: moveText 5s infinite;
+}
+
+@keyframes resizeImage {
+    0% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(1.2);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(+50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+  .img1 img{
+    width: 371px;
+  }
+  .img2 img{
+    width: 539px;
+  }
+  .img3 img{
+    width: 260px;
+  }
+  .img4 img{
+    width: 167px;
+  }
+  .img5 img{
+    width: 299px;
+  }
+  .img6 img{
+    width: 137px;
+  }
+  .img7 img{
+    width: 58px;
+  }
+  .img8 img{
+    width: 51px;
+  }
+  
